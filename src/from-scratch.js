@@ -14,7 +14,9 @@ let person = {
 };
 console.log(coolGreeting(person));
 
-const haveBirthday = () => {};
+const haveBirthday = (person) => {
+  person.age++;
+};
 
 const becomeSecretAgent = () => {};
 
