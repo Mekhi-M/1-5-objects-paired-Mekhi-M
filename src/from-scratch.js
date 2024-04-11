@@ -108,29 +108,66 @@ const fighters = {
   ],
 };
 
-console.log(getNextOpponent(fighters));
+// console.log(getNextOpponent(fighters));
 
 const listAllKeys = (object) => {
   return Object.keys(object);
 };
 
-const listAllValues = () => {};
+// tests
+
+const listAllValues = (obj) => {
+  return Object.values(obj);
+};
+
+// tests
+
+// const fighters2 = {
+//   name: "Fighters",
+//   sport: "basketball",
+//   wins: 3,
+//   location: {
+//     city: "Bridgeport",
+//     state: "CT",
+//   },
+//   matches: [
+//     {
+//       teamName: "Dunkaroos",
+//       skill: 9,
+//       wins: 12,
+//     },
+//     {
+//       teamName: "Space Jammers",
+//       skill: 10,
+//       wins: 16,
+//     },
+//     {
+//       teamName: "Mustangs",
+//       skill: 6,
+//       wins: 10,
+//     },
+//   ],
+// };
+
+// console.log(listAllValues(fighters2));
 
 const convertToMatrix = (arrayOfObjects) => {
   if (arrayOfObjects.length === 0) {
     return [];
   }
-  
+
   const keys = Object.keys(arrayOfObjects[0]);
   const matrix = [keys];
 
-  arrayOfObjects.forEach(obj => {
-    const values = keys.map(key => obj[key]);
+  arrayOfObjects.forEach((obj) => {
+    const values = keys.map((key) => obj[key]);
     matrix.push(values);
   });
 
   return matrix;
 };
+
+// tests
 
 module.exports = {
   coolGreeting,
