@@ -1,32 +1,31 @@
-const coolGreeting = () => {
+// test object
+
+let person = {
+  name: "Sara",
+  bio: "Too cool 4 skool.",
+  age: 32,
+  isCool: true,
 };
 
-const haveBirthday = () => {
-};
+const coolGreeting = (person) => {};
 
-const becomeSecretAgent = () => {
-};
+const haveBirthday = () => {};
 
-const carMaker = () => {
-};
+const becomeSecretAgent = () => {};
 
-const weAreNotFriends = () => {
-};
+const carMaker = () => {};
 
-const listHobbies = () => {
-};
+const weAreNotFriends = () => {};
 
-const getNextOpponent = () => {
-};
+const listHobbies = () => {};
 
-const listAllKeys = () => {
-};
+const getNextOpponent = () => {};
 
-const listAllValues = () => {
-};
+const listAllKeys = () => {};
 
-const convertToMatrix = () => {
-};
+const listAllValues = () => {};
+
+const convertToMatrix = () => {};
 
 module.exports = {
   coolGreeting,
