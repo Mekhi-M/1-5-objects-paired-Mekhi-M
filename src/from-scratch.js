@@ -25,17 +25,18 @@ const becomeSecretAgent = (person, spyHandle) => {
   person.spyHandle = spyHandle;
 };
 
-//tests
-let person3 = {
-  name: "Sara",
-  bio: "Too cool 4 skool.",
-  age: 32,
-  isCool: true,
-};
-console.log(person3);
+// tests
 
-becomeSecretAgent(person3, "dark night");
-console.log(person3);
+// let person3 = {
+//   name: "Sara",
+//   bio: "Too cool 4 skool.",
+//   age: 32,
+//   isCool: true,
+// };
+// console.log(person3);
+
+// becomeSecretAgent(person3, "dark night");
+// console.log(person3);
 
 const carMaker = (name, maker, year) => {
   return {
@@ -46,9 +47,25 @@ const carMaker = (name, maker, year) => {
   };
 };
 
-//tests
+// tests
 
-const weAreNotFriends = () => {};
+const weAreNotFriends = (person) => {
+  return person.friends.pop();
+};
+
+// tests
+
+let person5 = {
+  name: "Sara",
+  bio: "Too cool 4 skool.",
+  age: 32,
+  isCool: true,
+  friends: ["Joe", "John", "Josh", "Esperanza"],
+};
+console.log(person5);
+
+console.log(weAreNotFriends(person5, "dark night"));
+console.log(person5);
 
 const listHobbies = () => {};
 
