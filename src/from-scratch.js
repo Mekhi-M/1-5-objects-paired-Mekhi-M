@@ -110,11 +110,27 @@ const fighters = {
 
 console.log(getNextOpponent(fighters));
 
-const listAllKeys = () => {};
+const listAllKeys = (object) => {
+  return Object.keys(object);
+};
 
 const listAllValues = () => {};
 
-const convertToMatrix = () => {};
+const convertToMatrix = (arrayOfObjects) => {
+  if (arrayOfObjects.length === 0) {
+    return [];
+  }
+  
+  const keys = Object.keys(arrayOfObjects[0]);
+  const matrix = [keys];
+
+  arrayOfObjects.forEach(obj => {
+    const values = keys.map(key => obj[key]);
+    matrix.push(values);
+  });
+
+  return matrix;
+};
 
 module.exports = {
   coolGreeting,
