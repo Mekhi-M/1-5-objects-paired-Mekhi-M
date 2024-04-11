@@ -37,8 +37,14 @@ console.log(person3);
 becomeSecretAgent(person3, "dark night");
 console.log(person3);
 
-const carMaker = () => {};
-
+const carMaker = (name, maker, year) => {
+  return {
+    name: name,
+    maker: maker,
+    year: year,
+    needsOilChange: false
+  };
+};
 const weAreNotFriends = () => {};
 
 const listHobbies = () => {};
