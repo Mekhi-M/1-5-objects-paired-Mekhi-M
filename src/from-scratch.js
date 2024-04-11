@@ -67,7 +67,11 @@ console.log(person5);
 console.log(weAreNotFriends(person5, "dark night"));
 console.log(person5);
 
-const listHobbies = () => {};
+const listHobbies = (person) => {
+  person.hobbies.forEach(hobby => {
+    console.log(`${person.name} likes ${hobby}.`);
+  });
+};
 
 const getNextOpponent = () => {};
 
