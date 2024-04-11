@@ -42,9 +42,12 @@ const carMaker = (name, maker, year) => {
     name: name,
     maker: maker,
     year: year,
-    needsOilChange: false
+    needsOilChange: false,
   };
 };
+
+//tests
+
 const weAreNotFriends = () => {};
 
 const listHobbies = () => {};
