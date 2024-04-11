@@ -1,4 +1,10 @@
-// test object
+const coolGreeting = (person) => {
+  return person.isCool
+    ? `What is UP ${person.name.toUpperCase()}? How you been doin'?`
+    : `Greetings ${person.name}, how have you been lately?`;
+};
+
+//tests
 
 let person = {
   name: "Sara",
@@ -6,8 +12,7 @@ let person = {
   age: 32,
   isCool: true,
 };
-
-const coolGreeting = (person) => {};
+console.log(coolGreeting(person));
 
 const haveBirthday = () => {};
 
