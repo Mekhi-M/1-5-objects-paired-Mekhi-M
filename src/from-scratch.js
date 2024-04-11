@@ -1,32 +1,36 @@
-const coolGreeting = () => {
+const coolGreeting = (person) => {
+  return person.isCool
+    ? `What is UP ${person.name.toUpperCase()}? How you been doin'?`
+    : `Greetings ${person.name}, how have you been lately?`;
 };
 
-const haveBirthday = () => {
-};
+//tests
 
-const becomeSecretAgent = () => {
+let person = {
+  name: "Sara",
+  bio: "Too cool 4 skool.",
+  age: 32,
+  isCool: true,
 };
+console.log(coolGreeting(person));
 
-const carMaker = () => {
-};
+const haveBirthday = () => {};
 
-const weAreNotFriends = () => {
-};
+const becomeSecretAgent = () => {};
 
-const listHobbies = () => {
-};
+const carMaker = () => {};
 
-const getNextOpponent = () => {
-};
+const weAreNotFriends = () => {};
 
-const listAllKeys = () => {
-};
+const listHobbies = () => {};
 
-const listAllValues = () => {
-};
+const getNextOpponent = () => {};
 
-const convertToMatrix = () => {
-};
+const listAllKeys = () => {};
+
+const listAllValues = () => {};
+
+const convertToMatrix = () => {};
 
 module.exports = {
   coolGreeting,
