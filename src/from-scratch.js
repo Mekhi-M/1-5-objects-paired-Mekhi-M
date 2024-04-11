@@ -6,19 +6,36 @@ const coolGreeting = (person) => {
 
 //tests
 
-let person = {
-  name: "Sara",
-  bio: "Too cool 4 skool.",
-  age: 32,
-  isCool: true,
-};
-console.log(coolGreeting(person));
+// let person1 = {
+//   name: "Sara",
+//   bio: "Too cool 4 skool.",
+//   age: 32,
+//   isCool: true,
+// };
+// console.log(coolGreeting(person1));
 
 const haveBirthday = (person) => {
   person.age++;
 };
 
-const becomeSecretAgent = () => {};
+//tests
+
+const becomeSecretAgent = (person, spyHandle) => {
+  delete person.name;
+  person.spyHandle = spyHandle;
+};
+
+//tests
+let person3 = {
+  name: "Sara",
+  bio: "Too cool 4 skool.",
+  age: 32,
+  isCool: true,
+};
+console.log(person3);
+
+becomeSecretAgent(person3, "dark night");
+console.log(person3);
 
 const carMaker = () => {};
 
