@@ -76,53 +76,12 @@ const listHobbies = (person) => {
 // tests
 
 const getNextOpponent = (team) => {
-  return team.matches.length ? team.matches[0].teamName : null;
+  return team.matches[0] ? team.matches[0].teamName : null;
 };
 
 // tests
 
-const fighters = {
-  name: "Fighters",
-  sport: "basketball",
-  wins: 3,
-  location: {
-    city: "Bridgeport",
-    state: "CT",
-  },
-  matches: [
-    {
-      teamName: "Dunkaroos",
-      skill: 9,
-      wins: 12,
-    },
-    {
-      teamName: "Space Jammers",
-      skill: 10,
-      wins: 16,
-    },
-    {
-      teamName: "Mustangs",
-      skill: 6,
-      wins: 10,
-    },
-  ],
-};
-
-// console.log(getNextOpponent(fighters));
-
-const listAllKeys = (object) => {
-  return Object.keys(object);
-};
-
-// tests
-
-const listAllValues = (obj) => {
-  return Object.values(obj);
-};
-
-// tests
-
-// const fighters2 = {
+// const fighters = {
 //   name: "Fighters",
 //   sport: "basketball",
 //   wins: 3,
@@ -149,7 +108,29 @@ const listAllValues = (obj) => {
 //   ],
 // };
 
-// console.log(listAllValues(fighters2));
+// console.log(getNextOpponent(fighters));
+
+const listAllKeys = (object) => {
+  return Object.keys(object);
+};
+
+// tests
+
+const listAllValues = (obj) => {
+  return Object.values(obj);
+};
+
+// tests
+
+// let person8 = {
+//   name: "Sara",
+//   bio: "Too cool 4 skool.",
+//   age: 32,
+//   isCool: true,
+//   friends: ["Joe", "John", "Josh", "Esperanza"],
+// };
+
+// console.log(listAllValues(person8));
 
 const convertToMatrix = (arrayOfObjects) => {
   if (arrayOfObjects.length === 0) {
